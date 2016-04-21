@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>scrollLeft demo</title>
+  <style>
+  div.demo {
+    background: #ccc none repeat scroll 0 0;
+    border: 3px solid #666;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    width: 500px;
+    height: 100px;
+    overflow: auto;
+  }
+
+  .option{
+  	display:inline-block;
+  	width:100px;
+  	height:100px;
+  }
+  </style>
+  <script src="js/jquery.min.js"></script>
+</head>
+<body>
+ 
+<div class="demo">
+<div style="width:1000px;">
+	<div class="option">1</div>
+	<div class="option">2</div>
+	<div class="option">3</div>
+	<div class="option">4</div>
+	<div class="option">5</div>
+	<div class="option">6</div>
+	<div class="option">7</div>
+	<div class="option">8</div>
+	<div class="option">9</div>
+	<div class="option">10</div>
+</div>
+</div>
+ 
+<script>
+	$( "div.demo" ).scrollLeft( 300 );
+	console.log($( "div.demo" ).scrollLeft( ));
+</script>
+</body>
+</html>
